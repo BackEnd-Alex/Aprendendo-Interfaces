@@ -30,6 +30,6 @@ public class Main {
         double pricePerDay = sc.nextDouble();
 
         CarRental cr = new CarRental(start, finish,new Vehicle(carModel));
-
+        System.out.println("Teste:");
     }
 }
