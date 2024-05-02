@@ -6,7 +6,6 @@ import model.entities.Vehicle;
 import model.services.BrazilTaxService;
 import model.services.RentalService;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
@@ -34,11 +33,12 @@ public class Main {
         double pricePerDay = sc.nextDouble();
 
         RentalService rentalService = new RentalService(pricePerHours,pricePerHours, new BrazilTaxService());
-        rentalService.processinVoice(cr);
+        rentalService.processingInVoice(cr);
 
         System.out.println("FATURA:");
         System.out.println("Pagamento Basico: R$" + cr.getInvoice().getBasicPayment());
         System.out.println("Pagamento Imposto: R$" + cr.getInvoice().getTax());
         System.out.println("Pagamento Total: R$"+ cr.getInvoice().gettotalPayment());
+        sc.close();
     }
 }

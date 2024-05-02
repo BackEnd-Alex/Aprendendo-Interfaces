@@ -8,12 +8,12 @@ import java.time.Duration;
 public class RentalService {
     private Double pricePerHour;
     private Double pricePerDay;
-    private BrazilTaxService taxService;
+    private TaxService taxService;
 
     /*public RentalService(){
 
     }*/
-    public RentalService(Double pricePerHour, Double pricePerDay, BrazilTaxService taxService ) {
+    public RentalService(Double pricePerHour, Double pricePerDay, TaxService taxService ) {
         this.pricePerHour = pricePerHour;
         this.pricePerDay = pricePerDay;
         this.taxService = taxService;
@@ -24,10 +24,10 @@ public class RentalService {
     public Double getPricePerDay() {
         return pricePerDay;
     }
-        public BrazilTaxService getTaxService() {
+        public TaxService getTaxService() {
         return taxService;
     }
-    public void processinVoice(CarRental carRental){
+    public void processingInVoice(CarRental carRental){
         //ACHANDO DIFERENÇA ENTRE INICIO E FIM
 
         double minutes = Duration.between(carRental.getStart(), carRental.getFinish()).toMinutes();
