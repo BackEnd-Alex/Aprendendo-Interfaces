@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/Exercício de Fixação Interface.iml" filepath="$PROJECT_DIR$/.idea/Exercício de Fixação Interface.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/Interfaces.iml" filepath="$PROJECT_DIR$/Interfaces.iml" />
+>>>>>>> 3184e722d345527028bd93773b713ba1753aff37
     </modules>
   </component>
 </project>
