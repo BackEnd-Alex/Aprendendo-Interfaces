@@ -3,9 +3,6 @@ package apllication;
 import entities.Contract;
 import entities.InstallMent;
 import service.ContractService;
-
-import javax.swing.text.DateFormatter;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
