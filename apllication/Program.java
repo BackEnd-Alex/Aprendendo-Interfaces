@@ -32,15 +32,6 @@ public class Program {
             System.out.println(installMent);
         }
 
-
-
-
-
-
-
-
-
-        
         sc.close();
     }
 }
